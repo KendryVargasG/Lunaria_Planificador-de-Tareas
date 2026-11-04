@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lunaria</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                🌙 Lunaria
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuLunaria">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuLunaria">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Tareas
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Enfoque
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Estudio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Hábitos
+                        </a>
+                    </li>
+
+                </ul>
+
+                <button class="btn btn-outline-success rounded-pill">
+                    Mi Espacio
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="container py-5">
+
+        <div class="row align-items-center">
+
+            
+
+            <div class="col-lg-7">
+
+                <span class="badge rounded-pill text-bg-success mb-3">
+                    Bienvenida de nuevo 🌿
+                </span>
+
+                <h1 class="display-5 fw-bold">
+                    Organiza tu día,
+                    cultiva tu bienestar.
+                </h1>
+
+                <p class="lead text-secondary mt-3">
+                    Hoy es un gran día para avanzar.
+                    Pequeños pasos también florecen grandes metas.
+                </p>
+
+                
+
+                <div class="row g-3 mt-4">
+
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <h3>3</h3>
+                                <p class="mb-0">
+                                    Pendientes
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <h3>1</h3>
+                                <p class="mb-0">
+                                    En progreso
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <h3>5</h3>
+                                <p class="mb-0">
+                                    Completadas
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Lunaria -->
+
+            <div class="col-lg-5 text-center">
+
+                <img
+                    src="IMG/LUMA.png"
+                    alt="Lunaria"
+                    class="img-fluid">
+
+            </div>
+
+        </div>
+
+    </section>
+<!-- ================================= -->
+<!-- NUEVA TAREA + SANTUARIO SONORO -->
+<!-- ================================= -->
+
+<section class="container py-5">
+
+    <div class="row g-4">
+
+        <!-- NUEVA TAREA -->
+
+        <div class="col-lg-7">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body p-4">
+
+                    <h3 class="mb-3">
+                        🌿 Nueva tarea
+                    </h3>
+
+                    <p class="text-secondary">
+                        Convierte tus ideas en acciones.
+                    </p>
+
+                    <form>
+
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Título
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="¿Qué necesitas hacer?"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">
+                                Descripción
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                placeholder="Añade más detalles">
+                            </textarea>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+                          
+                                <label class="form-label" required>
+                                    Categoría
+                                </label>
+
+                                <select class="form-select">
+
+                                    <option>Seleccionar</option>
+                                    <option>Estudio</option>
+                                    <option>Personal</option>
+                                    <option>Trabajo</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+
+                                <label class="form-label">
+                                    Prioridad
+                                </label>
+
+                                <select class="form-select" required>
+
+                                    <option>Seleccionar</option>
+                                    <option>Alta</option>
+                                    <option>Media</option>
+                                    <option>Baja</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+                                Fecha límite
+                            </label>
+
+                            <input
+                                type="date"
+                                class="form-control">
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-success w-100">
+
+                            Crear tarea
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SANTUARIO SONORO -->
+
+        <div class="col-lg-5">
+
+            <div class="card shadow-sm border-0 h-100">
+
+                <div class="card-body p-4">
+
+                    <h3 class="mb-3">
+                        🎧 Santuario Sonoro
+                    </h3>
+
+                    <p class="text-secondary">
+                        Encuentra el ambiente ideal para enfocarte.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-2 mb-4">
+
+                        <button class="btn btn-outline-success">
+                            🌧️ Lluvia
+                        </button>
+
+                        <button class="btn btn-outline-success">
+                            🍃 Bosque
+                        </button>
+
+                        <button class="btn btn-outline-success">
+                            🌊 Olas
+                        </button>
+
+                        <button class="btn btn-outline-success">
+                            🌸 Ruido Rosa
+                        </button>
+
+                        <button class="btn btn-outline-success">
+                            ☕ Cafetería
+                        </button>
+
+                    </div>
+
+                    <div class="text-center my-4">
+
+                        <button class="btn btn-success rounded-circle p-3">
+
+                            ▶
+
+                        </button>
+
+                    </div>
+
+                    <label class="form-label">
+                        Volumen
+                    </label>
+
+                    <input
+                        type="range"
+                        class="form-range">
+
+                    <p class="text-center text-secondary mt-4">
+                        Luna recomienda elegir un ambiente tranquilo
+                        para mejorar tu concentración 🌙
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- TÉCNICAS DE ESTUDIO -->
+<!-- ================================= -->
+
+<section class="container py-5">
+
+    <div class="row g-4">
+
+        <!-- Método Feynman -->
+
+        <div class="col-lg-6">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <div class="card-body p-4">
+
+                    <h3>📚 Método Feynman</h3>
+
+                    <p class="text-secondary">
+                        Aprende explicando los conceptos con tus propias palabras.
+                    </p>
+
+                    <div class="mt-4">
+
+                        <h6>¿Qué estás estudiando?</h6>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Ej: Programación Orientada a Objetos">
+
+                    </div>
+
+                    <div class="mt-3">
+
+                        <h6>Explícalo con tus propias palabras</h6>
+
+                        <textarea
+                            class="form-control"
+                            rows="4"
+                            placeholder="Escribe tu explicación aquí..."></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Recuperación Activa -->
+
+        <div class="col-lg-6">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <div class="card-body p-4">
+
+                    <h3>🧠 Recuperación Activa</h3>
+
+                    <p class="text-secondary">
+                        Pon a prueba tus conocimientos sin consultar apuntes.
+                    </p>
+
+                    <div class="mt-4">
+
+                        <h6>Tema de estudio</h6>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Ej: HTML Semántico">
+
+                    </div>
+
+                    <div class="mt-3">
+
+                        <h6>¿Qué recuerdas?</h6>
+
+                        <textarea
+                            class="form-control"
+                            rows="4"
+                            placeholder="Escribe todo lo que recuerdes..."></textarea>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- REFLEXIÓN DE LUNA -->
+<!-- ================================= -->
+
+<section class="container pb-5">
+
+    <div class="card border-0 shadow-sm">
+
+        <div class="card-body p-5 text-center">
+
+            <h2>🌸 Reflexión de Luna</h2>
+
+            <p class="lead mt-4">
+                "Hazlo tan pequeño que sea imposible decir que no."
+            </p>
+
+            <p class="text-secondary">
+                Los pequeños avances constantes suelen generar
+                resultados más duraderos que los cambios extremos.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================= -->
+<!-- MIS TAREAS -->
+<!-- ================================= -->
+
+<section class="container pb-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h2>📋 Mis tareas</h2>
+
+        <div>
+
+            <button class="btn btn-success btn-sm">
+                Todas
+            </button>
+
+            <button class="btn btn-outline-success btn-sm">
+                Pendientes
+            </button>
+
+            <button class="btn btn-outline-success btn-sm">
+                Completadas
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="row g-4">
+
+        <!-- TAREA 1 -->
+
+        <div class="col-lg-4">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <span class="badge bg-danger mb-3">
+                        Alta
+                    </span>
+
+                    <h5>
+                        Revisar propuesta de Lunaria
+                    </h5>
+
+                    <p class="text-secondary">
+                        Revisar el wireframe y definir los componentes del dashboard.
+                    </p>
+
+                    <small>
+                        📅 10 Nov 2026
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TAREA 2 -->
+
+        <div class="col-lg-4">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <span class="badge bg-warning text-dark mb-3">
+                        Media
+                    </span>
+
+                    <h5>
+                        Estudiar Bootstrap
+                    </h5>
+
+                    <p class="text-secondary">
+                        Practicar componentes y sistema de grid.
+                    </p>
+
+                    <small>
+                        📅 11 Nov 2026
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TAREA 3 -->
+
+        <div class="col-lg-4">
+
+            <div class="card border-0 shadow-sm h-100">
+
+                <div class="card-body">
+
+                    <span class="badge bg-success mb-3">
+                        Baja
+                    </span>
+
+                    <h5>
+                        Lectura diaria
+                    </h5>
+
+                    <p class="text-secondary">
+                        Leer 20 páginas de desarrollo personal.
+                    </p>
+
+                    <small>
+                        📅 12 Nov 2026
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="text-center py-4 mt-5">
+
+    <p class="mb-0">
+        🌙 Lunaria || Organiza tu día, cultiva tu bienestar
+        <br>
+         @ 2026 Generation Colombia. CH15
+         <br>
+         Realizado por: Kendry Y. Vargas Gaviria
+
+    </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
