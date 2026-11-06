@@ -237,6 +237,36 @@
                         <input type="date"
                             class="form-control mb-3">
 
+                        <label class="form-label">
+
+                            Hora (opcional)
+
+                        </label>
+
+                        <input
+                            type="time"
+                            class="form-control mb-3">  
+                            
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Checklist (opcional)
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                placeholder="Ejemplo:
+                                            ☐ Leche
+                                            ☐ Huevos
+                                            ☐ Pan">
+
+                            </textarea>
+
+                        </div>    
+
                         <button
                             class="btn btn-success w-100">
                             + Crear tarea
@@ -432,59 +462,239 @@
 
       <!-- La meta es que se muestren las tareas ingresadas por medio del formulario -->   
 
-                    <div class="row mt-3">
+            <div class="row mt-3">
 
-                        <div class="col-md-4">
+            <!-- Tarea N°1 -->
 
-                            <div class="task-card">
+            <div class="col-md-4 mb-3">
 
-                                <h6>
-                                    Revisar propuesta
-                                </h6>
+                <div class="task-card">
 
-                                <p>
-                                    Leer documento y preparar comentarios.
-                                </p>
+                    <div class="d-flex justify-content-between">
 
-                            </div>
+                        <h6>
+                            Revisar propuesta
+                        </h6>
 
-                        </div>
-
-                        <div class="col-md-4">
-
-                            <div class="task-card">
-
-                                <h6>
-                                    Planificar la semana
-                                </h6>
-
-                                <p>
-                                    Definir objetivos principales.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4">
-
-                            <div class="task-card">
-
-                                <h6>
-                                    Leer un capítulo
-                                </h6>
-
-                                <p>
-                                    Continuar lectura y anotar ideas.
-                                </p>
-
-                            </div>
-
-                        </div>
+                        <span class="badge bg-warning text-dark">
+                            En progreso
+                        </span>
 
                     </div>
 
+                    <p>
+                        Leer documento y preparar comentarios.
+                    </p>
+
+                    <div class="d-flex gap-2 mb-2">
+
+                        <span class="badge bg-danger">
+                            URGENTE
+                        </span>
+
+                        <span class="badge bg-secondary">
+                            Trabajo
+                        </span>
+
+                    </div>
+
+                    <small class="d-block">
+                        <i class="bi bi-calendar3"></i>
+                        04/11/2026
+                    </small>
+
+                    <small class="d-block">
+                        <i class="bi bi-clock"></i>
+                        02:30 PM
+                    </small>
+
                 </div>
+
+            </div>
+
+            <!-- Tarea N°2 -->
+
+            <div class="col-md-4 mb-3">
+
+                <div class="task-card">
+
+                    <div class="d-flex justify-content-between">
+
+                        <h6>
+                            Comprar mercado
+                        </h6>
+
+                        <span class="badge bg-primary">
+                            Pendiente
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Comprar lo necesario para la semana.
+                    </p>
+
+                    <div class="d-flex gap-2 mb-2">
+
+                        <span class="badge bg-success">
+                            Baja
+                        </span>
+
+                        <span class="badge bg-secondary">
+                            Personal
+                        </span>
+
+                    </div>
+
+                    <ul class="task-checklist">
+
+                        <li>☐ Leche</li>
+                        <li>☐ Huevos</li>
+                        <li>☐ Pan</li>
+                        <li>☐ Frutas</li>
+
+                    </ul>
+
+                    <small class="d-block">
+                        <i class="bi bi-calendar3"></i>
+                        06/11/2026
+                    </small>
+
+                </div>
+
+            </div>
+
+            <!-- Tarea N°3 -->
+
+            <div class="col-md-4 mb-3">
+
+                <div class="task-card">
+
+                    <div class="d-flex justify-content-between">
+
+                        <h6>
+                            Planificar las tareas académicas de la semana
+                        </h6>
+
+                        <span class="badge bg-primary">
+                            Pendiente
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Definir las tareas prioritarias.
+                    </p>
+
+                    <div class="d-flex gap-2 mb-2">
+
+                        <span class="badge bg-warning text-dark">
+                            Alta
+                        </span>
+
+                        <span class="badge bg-info text-dark">
+                            Estudio
+                        </span>
+
+                    </div>
+
+                    <small class="d-block">
+                        <i class="bi bi-calendar3"></i>
+                        07/11/2026
+                    </small>
+
+                </div>
+
+            </div>
+
+            <!-- Tarea N°4 -->
+
+            <div class="col-md-4 mb-3">
+
+                <div class="task-card">
+
+                    <div class="d-flex justify-content-between">
+
+                        <h6>
+                            Leer un capítulo del libro de lectura actual.
+                        </h6>
+
+                        <span class="badge bg-success">
+                            Completada
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Continuar lectura y anotar las notas relevantes.
+                    </p>
+
+                    <div class="d-flex gap-2 mb-2">
+
+                        <span class="badge bg-primary">
+                            Media
+                        </span>
+
+                        <span class="badge bg-info text-dark">
+                            Estudio
+                        </span>
+
+                    </div>
+
+                    <small class="d-block">
+                        <i class="bi bi-calendar3"></i>
+                        08/11/2026
+                    </small>
+
+                </div>
+
+            </div>
+
+            <!-- Tarea N°5 -->
+
+            <div class="col-md-4 mb-3">
+
+                <div class="task-card">
+
+                    <div class="d-flex justify-content-between">
+
+                        <h6>
+                            Diseñar versión móvil de Lunaria
+                        </h6>
+
+                        <span class="badge bg-success">
+                            Completada
+                        </span>
+
+                    </div>
+
+                    <p>
+                        Adaptar Lunaria para dispositivos móviles.
+                    </p>
+
+                    <div class="d-flex gap-2 mb-2">
+
+                        <span class="badge bg-warning text-dark">
+                            Alta
+                        </span>
+
+                        <span class="badge bg-secondary">
+                            Trabajo
+                        </span>
+
+                    </div>
+
+                    <small class="d-block">
+                        <i class="bi bi-calendar3"></i>
+                        09/11/2026
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
 
                 <!-- Técnica de POMODORO -->
 
