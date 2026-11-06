@@ -191,50 +191,94 @@
                         Pasar del pensamiento a la acción.
                     </p>
 
-                    <form>
+                    <div
+                        id="alertaError"
+                        class="alert alert-danger d-none"
+                        role="alert">
 
-                        <input type="text"
+                        Por favor completa todos los campos obligatorios.
+
+                    </div>
+
+                    <form id="formularioTarea">
+
+                        <input
+                            type="text"
+                            id="NombreTarea"
                             class="form-control mb-3"
                             placeholder="¿Qué haremos hoy?">
 
                         <textarea
+                            id="DescripcionTarea"
                             class="form-control mb-3"
                             rows="3"
                             placeholder="Añade los detalles de tu tarea">
                         </textarea>
 
-                        <div class="row">
+                <!-- Categoría -->
 
-                            <div class="col-6">
+                <label class="form-label">
+                    Categoría
+                </label>
+                
+                    <select
+                        class="form-select mb-3"
+                        id="CategoriaTarea"> 
+                        
+                        <option value="">
+                            Seleccionar
+                        </option>
 
-                                <select class="form-select mb-3">
-                                    <option selected>
-                                        Seleccionar
-                                    </option>
-                                    <option>Estudio</option>
-                                    <option>Trabajo</option>
-                                    <option>Personal</option>
-                                </select>
+                        <option>Estudio</option>
+                        <option>Trabajo</option>   
+                        <option>Personal</option>
+                    </select>       
 
-                            </div>
+                <!-- Estado -->
 
-                            <div class="col-6">
+                <label class="form-label">
+                    Estado
+                </label>
 
-                                <select class="form-select mb-3">
-                                    <option selected>
-                                        Seleccionar
-                                    </option>
-                                    <option>URGENTE</option>
-                                    <option>Alta</option>
-                                    <option>Media</option>
-                                    <option>Baja</option>
-                                </select>
+                    <select
+                        class="form-select mb-3"
+                        id="EstadoTarea">
 
-                            </div>
+                        <option value="">
+                            Seleccionar
+                        </option>
 
-                        </div>
+                        <option>Pendiente</option>
+                        <option>En progreso</option> 
+                        <option>Completada</option>
+                    </select>        
+                    
+                <!-- Prioridad -->
 
-                        <input type="date"
+                <label class="form-label">
+                    Prioridad
+                </label>
+
+                    <select
+                        class="form-select mb-3"
+                        id="PrioridadTarea">
+
+                        <option value="">
+                            Seleccionar
+                        </option>
+
+                        <option>URGENTE</option>
+                        <option>Alta</option>
+                        <option>Media</option>
+                        <option>Baja</option>
+                    </select>
+
+                    <label class="form-label">
+                        Fecha límite
+                    </label>
+                        <input 
+                            type="date"
+                            id="FechaTarea"
                             class="form-control mb-3">
 
                         <label class="form-label">
@@ -290,7 +334,7 @@
 
                     <div id="calendar">
 
-                        <!-- Scrip.js -->
+                        <!--  Conectado con app.js -->
 
                     </div>
 
@@ -831,6 +875,7 @@
     <script src="./JS/pomodoro.js"></script>
     <script src="./JS/santuariosonoro.js"></script>
     <script src="./JS/tareas.js"></script>
+    <script src="./JS/app.js"></script>
 
 </body>
 
